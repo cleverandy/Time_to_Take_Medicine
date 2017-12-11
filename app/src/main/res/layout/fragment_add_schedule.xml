@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.andychung.timetotakemedicine.AddScheduleFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/textView_AddSchedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:text="新增提醒"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="26sp" />
+
+    <CheckedTextView
+        android:id="@+id/TexView_NameMedicine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="藥物名稱："
+        android:textSize="18sp"
+        android:layout_below="@+id/textView_AddSchedule"
+        android:layout_alignEnd="@+id/textView_AddSchedule"
+        android:layout_marginEnd="73dp" />
+
+    <CheckedTextView
+        android:id="@+id/TextView_Quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/TexView_NameMedicine"
+        android:layout_below="@+id/TexView_NameMedicine"
+        android:layout_marginTop="15dp"
+        android:text="每次份量："
+        android:textSize="18sp" />
+
+    <CheckedTextView
+        android:id="@+id/TextView_Frequency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/TextView_Quantity"
+        android:layout_below="@+id/TextView_Quantity"
+        android:layout_marginTop="15dp"
+        android:text="每日次數："
+        android:textSize="18sp" />
+
+    <CheckedTextView
+        android:id="@+id/TextView_Type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="種類："
+        android:textSize="18sp"
+        android:layout_below="@+id/TextView_Frequency"
+        android:layout_alignEnd="@+id/TextView_Frequency" />
+
+    <CheckedTextView
+        android:id="@+id/TextView_Location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="存放位置："
+        android:textSize="18sp"
+        android:layout_below="@+id/TextView_Type"
+        android:layout_alignEnd="@+id/TextView_Type" />
+
+    <CheckedTextView
+        android:id="@+id/TextView_Precautions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/TextView_Location"
+        android:layout_below="@+id/TextView_Location"
+        android:layout_marginTop="15dp"
+        android:text="注意事項："
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="26dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:textSize="16sp"
+        android:layout_above="@+id/TextView_Quantity"
+        android:layout_toEndOf="@+id/TextView_Quantity" />
+
+    <Spinner
+        android:id="@+id/spinner_Quantity"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/TextView_Quantity"
+        android:layout_alignEnd="@+id/editText7" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/TextView_Frequency"
+        android:layout_alignStart="@+id/editText11" />
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/TextView_Type"
+        android:layout_alignStart="@+id/spinner2" />
+
+    <EditText
+        android:id="@+id/editText12"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:textSize="16sp"
+        android:layout_below="@+id/spinner3"
+        android:layout_alignStart="@+id/spinner3" />
+
+    <EditText
+        android:id="@+id/editText11"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:layout_alignBaseline="@+id/TextView_Quantity"
+        android:layout_alignBottom="@+id/TextView_Quantity"
+        android:layout_toStartOf="@+id/spinner_Quantity" />
+
+    <EditText
+        android:id="@+id/editText13"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:layout_alignTop="@+id/TextView_Precautions"
+        android:layout_alignStart="@+id/editText12" />
+
+    <Button
+        android:id="@+id/button_Add"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignEnd="@+id/editText13"
+        android:layout_below="@+id/editText13"
+        android:layout_marginTop="18dp"
+        android:text="新增" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/button_Add"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/app_icon" />
+
+</RelativeLayout>

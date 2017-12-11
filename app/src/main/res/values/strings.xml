@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">吃藥了</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="QuantityType">
+        <item></item>
+        <item>顆</item>
+        <item>匙</item>
+        <item>張</item>
+        <item>毫升</item>
+    </string-array>
+</resources>

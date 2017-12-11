@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_Home"
+            android:icon="?android:attr/actionModePasteDrawable"
+            android:title="主畫面 Home" />
+        <item
+            android:id="@+id/nav_Schedule"
+            android:icon="@android:drawable/ic_menu_my_calendar"
+            android:title="吃藥時間表 Schedule" />
+        <item
+            android:id="@+id/nav_Medicine"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="藥物清單 Medicine List" />
+        <item
+            android:id="@+id/nav_Medical_Records"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="病歷 Medical Records" />
+    </group>
+
+    <item android:title="設定 Setting">
+        <menu>
+            <item
+                android:id="@+id/nav_Add_Schedule"
+                android:icon="@android:drawable/ic_input_add"
+                android:title="新增提醒 Add Schedule" />
+            <item
+                android:id="@+id/nav_Edit_Schedule"
+                android:icon="@drawable/ic_menu_send"
+                android:title="編輯提醒 Edit Schedule" />
+        </menu>
+    </item>
+
+</menu>
